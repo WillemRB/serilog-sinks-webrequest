@@ -1,2 +1,2 @@
-# serilog-sinks-webrequest
-Sink that simple sends a WebRequest. Nothing fancy, but very generic.
+# Serilog.Sinks.WebRequest
+[Serilog](http://serilog.net/) Sink that sends a WebRequest to some Uri. Nothing fancy, but very generic.
