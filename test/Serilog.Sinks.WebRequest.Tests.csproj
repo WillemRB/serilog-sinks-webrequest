@@ -56,7 +56,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Tests.cs" />
+    <Compile Include="Messages.cs" />
+    <Compile Include="WebRequestSinkTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
