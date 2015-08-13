@@ -1,15 +1,17 @@
 ﻿using System;
 using System.Collections.Specialized;
+using System.Configuration;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+
 
 namespace Serilog.Sinks.WebRequest.Tests
 {
     [TestClass]
     public class WebRequestSinkTests
     {
-        private string Url = "http://localhost";
+        private string Url = ConfigurationManager.AppSettings["testUrl"];
 
-        private string glipWebhook = "https://hooks.glip.com/webhook/{guid}";
+        private string glipWebhook = ConfigurationManager.AppSettings["glipWebHook"];
 
         [TestMethod]
         public void LoggerTest()
