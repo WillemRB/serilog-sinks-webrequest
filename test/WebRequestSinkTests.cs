@@ -3,7 +3,6 @@ using System.Collections.Specialized;
 using System.Configuration;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-
 namespace Serilog.Sinks.WebRequest.Tests
 {
     [TestClass]
@@ -37,7 +36,7 @@ namespace Serilog.Sinks.WebRequest.Tests
 
             var message = new GlipMessage();
 
-            logger.Information("{{ \"icon\": {icon}, \"activity\": {activity}, \"title\": {titile}, \"body\": {body} }}",
+            logger.Information("{{ \"icon\": {icon}, \"activity\": {activity}, \"title\": {title}, \"body\": {body} }}",
                 message.Icon, message.Activity, message.Title, message.Body);
         }
     }
